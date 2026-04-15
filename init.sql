@@ -31,7 +31,6 @@ CREATE TABLE IF NOT EXISTS fact_popularite (
     explicite   BOOLEAN
 );
 
--- Index pour accélérer les requêtes analytiques
 CREATE INDEX IF NOT EXISTS idx_fact_genre    ON fact_popularite(genre_id);
 CREATE INDEX IF NOT EXISTS idx_fact_temps    ON fact_popularite(temps_id);
 CREATE INDEX IF NOT EXISTS idx_fact_artiste  ON fact_popularite(artiste_id);
